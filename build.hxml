@@ -1,0 +1,7 @@
+-cp ./src
+
+-lib modular
+-dce full
+
+-main Main
+-js bin/main.js
