@@ -1,21 +1,27 @@
 package main;
 
-import feature.Feature1Core;
-import feature.FeatureContext;
+import feature.*;
 import init.InitContext;
 
 class MainContext {
-	public var feature1Core:Feature1Core;
+	public var featureXCore:FeatureXCore;
 
 	public function new() {
 		trace("MainContext");
 
-		feature1Core = new Feature1Core();
+		featureXCore = new FeatureXCore();
 
-		Bundle.loadLib("feature", ["feature.FeatureContext"]).then(function(_) {
-			trace("FeatureContext classes Loaded");
-			trace(new FeatureContext(this));
+
+
+	}
+	public function load() {
+		Bundle.load(Feature1, "feature_Feature1").then(function(_) {
+			trace("Feature1 classes Loaded");
+			trace(new Feature1());
 		});
-
+		Bundle.load(Feature2, "feature_Feature2").then(function(_) {
+			trace("Feature2 classes Loaded");
+			trace(new Feature2());
+		});
 	}
 }

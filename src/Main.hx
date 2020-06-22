@@ -10,16 +10,24 @@ class Main {
 		trace("Haxe is great!");
 		var initial = new InitContext();
 		var stream = new StreamContext();
+
+		var assemble:Void->Void;
+		var loadMain:Void->Void;
 		var main:MainContext;
 
-		var loadMain:Void->Void;
-
 		loadMain = function() {
-			Bundle.loadLib("maincontext", ["main.MainContext"]).then(function(_) {
+			Bundle.load(MainContext, "maincontext").then(function(_) {
 				trace("MainContext classes Loaded");
 				main = new MainContext();
+				assemble();
 			});
+
+
 		}
+		assemble = function assemble() {
+			main.load();
+		}
+
 		loadMain();
 	}
 }

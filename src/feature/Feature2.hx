@@ -1,8 +1,8 @@
 package feature;
 
-class Feature1 {
+class Feature2 {
 	public function new() {
-		trace("Feature1");
+		trace("Feature2");
 
 		trace(new Feature3());
 	}
