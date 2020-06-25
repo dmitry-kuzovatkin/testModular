@@ -1,5 +1,5 @@
-# @install: lix --silent download "gh://github.com/elsassph/haxe-modular#9ea1ffce5780e6b970506c2098299cc73ae66fbf" into modular/0.12.0/github/9ea1ffce5780e6b970506c2098299cc73ae66fbf
--cp ${HAXE_LIBCACHE}/modular/0.12.0/github/9ea1ffce5780e6b970506c2098299cc73ae66fbf/src
+# @install: lix --silent download "gh://github.com/back2dos/haxe-modular#9e8ddb9069fd69ff22381fd314cb730655ac7470" into modular/0.12.0/github/9e8ddb9069fd69ff22381fd314cb730655ac7470
+-cp ${HAXE_LIBCACHE}/modular/0.12.0/github/9e8ddb9069fd69ff22381fd314cb730655ac7470/src
 -D modular=0.12.0
 --macro Split.modules()
 -D closure_slavemode

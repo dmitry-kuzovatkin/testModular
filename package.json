@@ -7,7 +7,7 @@
 	"directories": {},
 	"repository": {},
 	"dependencies": {
-		"haxe-modular": "0.12.0"
+		"haxe-modular": "git://github.com/elsassph/haxe-modular.git#9e8ddb9069fd69ff22381fd314cb730655ac7470"
 	},
 	"devDependencies": {},
 	"bin": {
